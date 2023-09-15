@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* :root {
+
+} */
+
+body {
+  background-image: url(../background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: montserrat, sans-serif;
+}
+
+.nav-menu {
+  font-weight: 500;
+  color: #737373;
+}
+
+.button {
+  font-size: 20px;
+  font-weight: 600;
+}
