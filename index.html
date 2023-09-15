@@ -19,14 +19,18 @@
   </head>
 
   <body>
+    <div class="background">
+      <img src="./assets/background.png" class="bg-img" alt="" />
+    </div>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-transparent mt-4 sticky-top"
+      id="myNavbar"
+    >
       <div class="container">
-        <h3>
-          <a class="navbar-brand navbar-nav font-weight-bold mt-2" href="#"
-            >Indicorp</a
-          >
-        </h3>
+        <a class="navbar-brand navbar-nav mt-2" href="#"
+          ><h3 class="brand-logo">Indicorp</h3></a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -61,18 +65,19 @@
     </nav>
     <!-- Navbar -->
 
+    <!-- Content 1 -->
     <div class="container">
       <div class="row mt-xl-5 mt-lg-5 mt-md-5 mt-sm-5">
         <div class="col-md-6 mt-xl-5 mt-lg-5 mt-md-5 mt-sm-5">
-          <h1 class="mt-xl-5 mt-lg-5 mt-md-5 mt-sm-5">
+          <h1 class="text-header mt-xl-5 mt-lg-5 mt-md-5 mt-sm-5">
             EMPOWER <br />
             YOUR BUSINESS
           </h1>
-          <h4 class="font-weight-normal">
+          <h4 class="text-subheader font-weight-normal">
             We know how large objects will act, <br />
             but things on a small scale.
           </h4>
-          <button class="button btn-warning rounded-pill px-3 py-2">
+          <button class="button btn-warning text-white rounded-pill px-3 py-2">
             Get Quote Now
           </button>
           <button
@@ -82,8 +87,58 @@
           </button>
         </div>
       </div>
-      <div class="row"></div>
+      <div class="row mt-xl-5">
+        <div class="col-md-4">
+          <div class="card px-2 pt-2">
+            <div class="card-body">
+              <img
+                src="./assets/icons/digital-marketing.png"
+                alt=""
+                width="48px"
+                class="mb-3"
+              />
+              <h3>Digital Marketing</h3>
+              <p>We focus on ergonomics and meeting you where you work.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card px-2 pt-2">
+            <div class="card-body">
+              <img
+                src="./assets/icons/digital-marketing.png"
+                alt=""
+                width="48px"
+                class="mb-3"
+              />
+              <h3>Digital Marketing</h3>
+              <p>We focus on ergonomics and meeting you where you work.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card px-2 pt-2">
+            <div class="card-body">
+              <img
+                src="./assets/icons/digital-marketing.png"
+                alt=""
+                width="48px"
+                class="mb-3"
+              />
+              <h3>Digital Marketing</h3>
+              <p>We focus on ergonomics and meeting you where you work.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- Content 1 -->
+
+    <!-- Content 2 -->
+    <div class="container">
+      <p>aaaaaaa</p>
+    </div>
+    <!-- Content 2 -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -98,5 +153,21 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 50) {
+            // Mengubah warna navbar saat scroll lebih dari 100 piksel
+            $("#myNavbar").removeClass("bg-transparent");
+            $("#myNavbar").addClass("bg-light"); // Ganti dengan kelas warna yang sesuai
+          } else {
+            $("#myNavbar").removeClass("bg-light"); // Ganti dengan kelas warna yang sesuai
+            $("#myNavbar").addClass("bg-transparent");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
