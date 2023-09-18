@@ -18,9 +18,9 @@
     <title>Indicorp</title>
   </head>
 
-  <body>
+  <>
     <div class="background">
-      <img src="./assets/background.png" class="bg-img" alt="" />
+      <img src="./assets/background.png" class="bg-img" alt="background" />
     </div>
     <!-- Navbar -->
     <nav
@@ -28,7 +28,7 @@
       id="myNavbar"
     >
       <div class="container">
-        <a class="navbar-brand navbar-nav mt-2" href="#"
+        <a class="navbar-brand navbar-nav mt-2" href="#home"
           ><h3 class="brand-logo">Indicorp</h3></a
         >
         <button
@@ -48,16 +48,16 @@
         >
           <ul class="nav-menu navbar-nav font-weight-bold">
             <li class="nav-item mx-3">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link" href="#">Product</a>
+              <a class="nav-link" href="#product">Product</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -66,7 +66,7 @@
     <!-- Navbar -->
 
     <!-- Content 1 -->
-    <div class="container">
+    <div class="container" id="home">
       <div class="row mt-xl-5 mt-lg-3 mt-md-2 mt-sm-2">
         <div class="col-md-6 mt-xl-2 mt-lg-3 mt-md-2 ml-md-n1 mt-sm-2 ml-sm-n3">
           <h1 class="text-header mt-lg-3 mt-md-2 mt-sm-2">
@@ -130,7 +130,7 @@
               />
               <h3 class="card-title">Digital Marketing</h3>
               <p class="card-text">the quick fox jumps over the 
-                lazy dog</p>
+                lazy dog.</p>
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@
 
     <!-- Content 2 -->
     <div class="container-fluid">
-      <div class="container mt-xl-5 py-5">
+      <div class="container mt-xl-5 pt-lg-5 pt-md-5">
         <div class="text-center d-flex flex-column">
           <h2 class="text-header-sec2">WHY CHOOSE US</h2>
           <p class="text-subheader-sec2 mx-auto">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
@@ -181,14 +181,12 @@
 
     <!-- Content 3 -->
 
-    <div class="container-fluid">
-      <div class="container py-5">
-        <div class="container">
+    <div class="container-fluid" id="product">
+      <div class="container pt-xl-5">
             <div class="text-center mt-xl-5 d-flex flex-column">
               <h2 class="text-header-sec2">Practice Advice</h2>
               <p class="text-subheader-sec2 mx-auto">Problems trying to resolve the conflict between 
                 the two major realms of Classical physics: Newtonian mechanics</p>
-            </div>
         </div>
         <!-- card -->
         <div class="card-deck mb-5 mt-5">
@@ -232,6 +230,7 @@
                 of the behaviour </p>
               </div>
               <img src="./assets/icons/work-better.png" class="rounded-bottom">
+          </div>
         </div>
       </div>
     </div>
@@ -240,7 +239,7 @@
     
     <!-- Content 4 -->
 
-    <div class="container-fluid ml-xl-n3">
+    <div class="container-fluid pt-xl-5" id="pricing">
       <div class="container mb-5">
         <div class="container">
           <div class="text-center mt-xl-5 d-flex flex-column">
@@ -288,28 +287,178 @@
     
     <div class="container-fluid bg-light py-2">
       <div class="my-5">
-          <div class="row text-center">
-              <div class="col-6 col-sm-2">
-                  <img src="./assets/icons/hooli.png" width="100px" alt="hooli-logo">
+        <div class="row text-center">
+          <div class="brand col-6 col-sm-2">
+              <img src="./assets/icons/hooli.png" width="110px" alt="hooli-logo">
+          </div>
+          <div class="brand col-6 col-sm-2">
+              <img src="./assets/icons/iyft.png" width="80px" alt="iyft-logo">
+          </div>
+          <div class="brand col-6 col-sm-2">
+              <img src="./assets/icons/leaf.png" width="80px" alt="leaf-logo">
+          </div>
+          <div class="brand col-6 col-sm-2">
+              <img src="./assets/icons/stripe.png" width="100px" alt="stripe-logo">
+          </div>
+          <div class="brand col-6 col-sm-2">
+              <img src="./assets/icons/aws.png" width="90px" alt="aws-logo">
+          </div>
+          <div class="brand col-6 col-sm-2">
+              <img src="./assets/icons/reddit.png" width="60px" alt="reddit-logo">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row d-flex subscribe bg-info p-3">
+          <div class="col-sm-12 col-md-6 pt-2"> 
+            <h3 class="font-24px text-white w-75 pl-2">Subscribe For Latest Newsletter</h3> 
+          </div>
+          <div class="col-sm-12 col-md-6 pt-1"> 
+            <div class="input-group"> 
+              <input type="email" name="email" placeholder="Your Email" id="" class="form-control rounded-left border-0"> 
+              <div class="input-group-append">
+                <button type="submit" class="btn bg-warning text-white border-0 rounded-right font-weight-light">Subscribe</button> 
               </div>
-              <div class="col-6 col-sm-2">
-                  <img src="./assets/icons/iyft.png" width="80px" alt="iyft-logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid custom-bg" style="height: 77px; margin-bottom: 100px;">
+    </div>
+    <div class="container-fluid bg-light" style="margin-top: -100px; padding: 50px 0;" id="contact">
+      <div class="container">
+        <div class="text-center mt-xl-5 d-flex flex-column">
+          <h2 class="text-40px">Get In Touch</h2>
+          <p class="text-subheader-sec2 mx-auto">Problems trying to resolve the conflict between 
+            the two major realms of Classical physics: Newtonian mechanics </p>
+        </div>
+          <div class="card-deck mb-5 mt-5">
+            <div class="card-contact card">
+              <div class="card-body text-center">
+                <img src="./assets/icons/phone.png" alt="phone" class="py-4">
+                <h6 class="text-14px">georgia.young@example.com</h6>
+                <h6 class="text-14px">georgia.young@ple.com</h6>
+                <h5 class="card-text-content py-3">Get Support</h5>
+                <button type="submit" class="button-contact rounded border-warning text-warning text-14px bg-white p-2 mb-4">Submit Request</button>
               </div>
-              <div class="col-6 col-sm-2">
-                  <img src="./assets/icons/leaf.png" width="80px" alt="leaf-logo">
+            </div>
+            <div class="card custom-bg">
+              <div class="card-body text-center">
+                <img src="./assets/icons/location.png" alt="location" class="py-4">
+                <h6 class="text-14px text-white">georgia.young@example.com</h6>
+                <h6 class="text-14px text-white">georgia.young@ple.com</h6>
+                <h5 class="card-text-content text-white py-3">Get Support</h5>
+                <button type="submit" class="rounded border-white text-white text-14px custom-bg p-2 mb-4">Submit Request</button>
               </div>
-              <div class="col-6 col-sm-2">
-                  <img src="./assets/icons/stripe.png" width="100px" alt="stripe-logo">
+            </div>
+            <div class="card">
+              <div class="card-body text-center">
+                <img src="./assets/icons/telegram.png" alt="telegram" class="py-4">
+                <h6 class="text-14px">georgia.young@example.com</h6>
+                <h6 class="text-14px">georgia.young@ple.com</h6>
+                <h5 class="card-text-content py-3">Get Support</h5>
+                <button type="submit" class="rounded border-warning text-warning text-14px bg-white p-2 mb-4">Submit Request</button>
               </div>
-              <div class="col-6 col-sm-2">
-                  <img src="./assets/icons/aws.png" width="90px" alt="aws-logo">
-              </div>
-              <div class="col-6 col-sm-2">
-                  <img src="./assets/icons/reddit.png" width="60px" alt="reddit-logo">
-              </div>
+            </div>
           </div>
       </div>
-  </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row d-flex subscribe p-3 text-center"> <!-- Tambahkan kelas text-center di sini -->
+          <div class="col-sm-12 col-md-6 pt-2"> 
+            <h3 class="font-24px">Consulting Agency For Your Business</h3> 
+            <p class="text-subheader-sec2">the quick fox jumps over the lazy dog</p>
+          </div>
+          <div class="col-sm-12 col-md-6 pt-1 d-flex justify-content-center justify-content-xl-end">
+            <div class="">
+              <button type="submit" class="btn bg-warning text-white border-0 rounded font-weight-light">Contact Us</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- FOOTER -->
+    <footer>
+      <div class="container-fluid footer-bg">
+        <div class="container py-5">
+          <div class="row border-white">
+            <div class="col-md-2 mb-4">
+              <div class="mb-4">
+                <h5 class="card-text-content text-white">Company Info</h5>
+              </div>
+              <div class="text-14px">
+                <p><a href="" class="text-white">About Us</a></p>
+                <p><a href="" class="text-white">Career</a></p>
+                <p><a href="" class="text-white">We are hiring</a></p>
+                <p><a href="" class="text-white">Blog</a></p>
+              </div>
+            </div>
+            <div class="col-md-2 mb-4">
+              <div class="mb-4">
+                <h5 class="card-text-content text-white">Legal</h5>
+              </div>
+              <div class="text-14px">
+                <p><a href="" class="text-white">About Us</a></p>
+                <p><a href="" class="text-white">Career</a></p>
+                <p><a href="" class="text-white">We are hiring</a></p>
+                <p><a href="" class="text-white">Blog</a></p>
+              </div>
+            </div>
+            <div class="col-md-2 mb-4">
+              <div class="mb-4">
+                <h5 class="card-text-content text-white">Features</h5>
+              </div>
+              <div class="text-14px">
+                <p><a href="" class="text-white">Business Marketing</a></p>
+                <p><a href="" class="text-white">User Analytic</a></p>
+                <p><a href="" class="text-white">Live Chat</a></p>
+                <p><a href="" class="text-white">Unlimited Support</a></p>
+              </div>
+            </div>
+            <div class="col-md-2 mb-4">
+              <div class="mb-4">
+                <h5 class="card-text-content text-white">Resources</h5>
+              </div>
+              <div class="text-14px">
+                <p><a href="" class="text-white">IOS & Android</a></p>
+                <p><a href="" class="text-white">Watch a Demo</a></p>
+                <p><a href="" class="text-white">Customers</a></p>
+                <p><a href="" class="text-white">API</a></p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="mb-4">
+                <h5 class="card-text-content text-white">Get In Touch</h5>
+              </div>
+              <div>
+                <div class="d-flex flex-row">
+                  <img src="./assets/icons/footer-phone.png" alt="phone" width="24px">
+                  <h6 class="text-14px text-white pl-3">(480) 555-0103</h6>
+                </div>
+                <div class="d-flex flex-row my-4">
+                  <img src="./assets/icons/footer-loc.png" alt="location" width="24px">
+                  <h6 class="text-14px text-white pl-3">4517 Washington Ave, Manchester</h6>
+                </div>
+                <div class="d-flex flex-row">
+                  <img src="./assets/icons/footer-email.png" alt="telegram" width="24px">
+                  <h6 class="text-14px text-white pl-3">debra.holt@example.com</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center text-white-50 py-3">© 2020 Copyright:
+        <a href="#home" class="text-white text-decoration-none"> Indicorp.com</a>
+      </div>
+    </footer>
+
+  
   
   
     
